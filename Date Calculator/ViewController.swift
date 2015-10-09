@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        datePicker.date = NSDate()
         datePickerValueChanged(datePicker);
     }
 
@@ -35,7 +34,7 @@ class ViewController: UIViewController {
         let currentCalendar = NSCalendar.currentCalendar()
         var calendarWeek = currentCalendar.component(NSCalendarUnit.WeekOfYear, fromDate: datePickerDate)
         let weekDay = datePickerDate.weekdayName;
-        let differenceInDays = abs(currentCalendar.components(.Day, fromDate: datePickerDate, toDate: currentDate, options: NSCalendarOptions.WrapComponents).day)
+        let differenceInDays = abs(currentCalendar.components(.Day, fromDate: currentCalendar.startOfDayForDate(datePickerDate), toDate: currentCalendar.startOfDayForDate(currentDate), options: NSCalendarOptions.WrapComponents).day)
         
         // Create week day label text
         var weekDayStr = "Wochentag : \(weekDay)"
