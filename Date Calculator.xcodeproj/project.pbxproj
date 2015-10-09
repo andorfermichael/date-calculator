@@ -22,6 +22,7 @@
 		8D877CA71BC66DF0008AC44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D877CAA1BC66DF0008AC44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D877CAC1BC66DF0008AC44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D877CB21BC6825D008AC44A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 		8D877C941BC66DF0008AC44A = {
 			isa = PBXGroup;
 			children = (
+				8D877CB21BC6825D008AC44A /* MyPlayground.playground */,
 				8D877C9F1BC66DF0008AC44A /* Date Calculator */,
 				8D877C9E1BC66DF0008AC44A /* Products */,
 			);
