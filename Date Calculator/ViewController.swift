@@ -27,11 +27,13 @@ class ViewController: UIViewController {
     
     @IBAction func datePickerValueChanged(datePicker : UIDatePicker!) {
         
-        // Get necessary information from date picker
-        let datePickerDate = datePicker.date;
-        let currenCalendar = NSCalendar.currentCalendar()
-        let calendarWeek = currenCalendar.component(NSCalendarUnit.WeekOfYear, fromDate: datePickerDate)
+        // Calculate data from date picker data
+        let datePickerDate = datePicker.date
+        let currentDate = NSDate()
+        let currentCalendar = NSCalendar.currentCalendar()
+        var calendarWeek = currentCalendar.component(NSCalendarUnit.WeekOfYear, fromDate: datePickerDate)
         let weekDay = datePickerDate.weekdayName;
+        let differenceInDays = abs(currentCalendar.components(.Day, fromDate: datePickerDate, toDate: currentDate, options: NSCalendarOptions.WrapComponents).day)
         
         // Create week day label text
         var weekDayStr = "Wochentag : \(weekDay)"
@@ -39,13 +41,21 @@ class ViewController: UIViewController {
         // Change label to correct week day
         wochenTag.text = weekDayStr;
         
+        if weekDay == "Sunday" {
+            calendarWeek = calendarWeek - 1;
+        }
+        
         // Create calendar week label text
         var calendarWeekStr = "Kalenderwoche : \(calendarWeek)"
         
         // Change label to correct calendar week
         kalenderWoche.text = calendarWeekStr
         
-
+        // Create difference in days label text
+        var differenceInDaysStr = "Differenz zu heute in Tagen: \(differenceInDays)"
+        
+        // Change label to correct calendar week
+        differenzInTagen.text = differenceInDaysStr
         
         
     }
