@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        datePicker.date = NSDate()
+        datePickerValueChanged(datePicker);
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +43,7 @@ class ViewController: UIViewController {
         // Change label to correct week day
         wochenTag.text = weekDayStr;
         
+        // Correct calendar week from american to european format
         if weekDay == "Sunday" {
             calendarWeek = calendarWeek - 1;
         }
