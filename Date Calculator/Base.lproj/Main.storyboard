@@ -40,8 +40,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Differenz zu heute in Tagen: 223" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLK-N1-kft">
-                                <rect key="frame" x="20" y="353" width="249" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Differenz zu heute in Tagen: 223" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLK-N1-kft">
+                                <rect key="frame" x="20" y="354" width="249" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Gyo-5N-jUQ"/>
                                     <constraint firstAttribute="width" constant="258" id="XUX-ii-pGv"/>
@@ -104,7 +104,7 @@
                         <outlet property="datePicker" destination="hmR-Rj-XIX" id="HGM-qk-z6I"/>
                         <outlet property="differenzInTagen" destination="mLK-N1-kft" id="3eV-w1-ujM"/>
                         <outlet property="kalenderWoche" destination="zqD-al-Yy6" id="zyi-1J-NMp"/>
-                        <outlet property="wochenTag" destination="JoC-wl-BpH" id="2g4-uk-aah"/>
+                        <outlet property="wochenTag" destination="JoC-wl-BpH" id="RmT-9m-rBk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         let differenceInDays = abs(currentCalendar.components(.Day, fromDate: currentCalendar.startOfDayForDate(datePickerDate), toDate: currentCalendar.startOfDayForDate(currentDate), options: NSCalendarOptions.WrapComponents).day)
         
         // Create week day label text
-        var weekDayStr = "Wochentag : \(weekDay)"
+        let weekDayStr = "Wochentag: \(weekDay)"
         
         // Change label to correct week day
         wochenTag.text = weekDayStr;
@@ -48,13 +48,13 @@ class ViewController: UIViewController {
         }
         
         // Create calendar week label text
-        var calendarWeekStr = "Kalenderwoche : \(calendarWeek)"
+        let calendarWeekStr = "Kalenderwoche: \(calendarWeek)"
         
         // Change label to correct calendar week
         kalenderWoche.text = calendarWeekStr
         
         // Create difference in days label text
-        var differenceInDaysStr = "Differenz zu heute in Tagen: \(differenceInDays)"
+        let differenceInDaysStr = "Differenz zu heute in Tagen: \(differenceInDays)"
         
         // Change label to correct calendar week
         differenzInTagen.text = differenceInDaysStr
